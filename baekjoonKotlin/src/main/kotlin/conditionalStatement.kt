@@ -2,6 +2,7 @@ import java.util.Scanner
 
 class conditionalStatement {
     val sc : Scanner = Scanner(System.`in`)
+
     // 1330 두 수 비교하기
     fun Statement(){
         val arr = readLine()!!.split(" ").map{it.toInt()}
@@ -15,7 +16,6 @@ class conditionalStatement {
     }
 
     // 9498 시험 성적
-
     fun grade(){
         var grade = sc.nextInt()
         when(grade){
@@ -68,20 +68,48 @@ class conditionalStatement {
     }
 
     // 2525 오븐 시계
-
     fun oven(){
         var a = sc.nextInt()
         var b = sc.nextInt()
         var c = sc.nextInt()
 
-        val sum = (60*a)+b+c
 
-        var h = sum / 60
-        var m = sum % 60
+        val sum = 60 * a + b + c
 
-        if(h>24){
-            h-=24
+        // A와 B를 분으로 변환한 것에 C를 더함
+
+        var h : Int = sum / 60
+        val m : Int = sum % 60
+
+        if (h >= 24) {
+            h -= 24
         }
-        println("${h} ${m}")
+
+        println("$h $m")
+    }
+
+    // 2480 주사위 3개
+
+    fun dice(){
+        var arr = readLine()!!.split(" ").map{it.toInt()}
+        var max : Int
+
+        if( (arr[0] == arr[1]) and (arr[1] == arr[2])){
+            println("${arr[0]*1000+10000}")
+            return
+        }else {
+            arr= arr.sorted()
+            if(arr[0]==arr[1]){
+                max = arr[0]*100+1000
+            }else if(arr[0]==arr[2]){
+                max = arr[0]*100+1000
+            }else if(arr[1] == arr[2]){
+                max = arr[1]*100+1000
+            }else{
+                max = arr[2]*100
+                println(arr.toString())
+            }
+        }
+        println("$max")
     }
 }

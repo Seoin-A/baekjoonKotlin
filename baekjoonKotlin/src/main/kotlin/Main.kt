@@ -1,7 +1,7 @@
 
 fun main(args: Array<String>) {
-    var result = conditionalStatement()
-    result.oven()
+    var check = loop()
+    check.sum()
 
 
 }
