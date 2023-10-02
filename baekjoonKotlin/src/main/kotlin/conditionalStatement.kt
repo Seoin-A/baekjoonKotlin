@@ -70,18 +70,18 @@ class conditionalStatement {
     // 2525 오븐 시계
 
     fun oven(){
-        val arr = readLine()!!.split(" ").map{it.toInt()}
-        var time = sc.nextInt()
-        if((arr[1]+time)<60){
-            println("${arr[0]} ${arr[1]+time}")
-        }else {
-            var a = (arr[1]+time)/60
-            var b = (arr[1]+time)%60
-            if(arr[0]+a>23){
-                println("0 ${b}")
-            }else{
-                println("${a+arr[0]} ${b}")
-            }
+        var a = sc.nextInt()
+        var b = sc.nextInt()
+        var c = sc.nextInt()
+
+        val sum = (60*a)+b+c
+
+        var h = sum / 60
+        var m = sum % 60
+
+        if(h>24){
+            h-=24
         }
+        println("${h} ${m}")
     }
 }
