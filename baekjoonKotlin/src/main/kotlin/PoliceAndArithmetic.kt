@@ -1,4 +1,9 @@
+import java.text.SimpleDateFormat
+import java.time.ZoneId
+import java.time.ZonedDateTime
+import java.util.Calendar
 import java.util.Scanner
+import java.util.SimpleTimeZone
 
 class PoliceAndArithmetic {
     val sc : Scanner = Scanner(System.`in`)
@@ -108,6 +113,11 @@ class PoliceAndArithmetic {
         println("( 0 )\"\"\"\\")
         println("|\"^\"`    |")
         println("||_/=\\\\__|")
+    }
+
+    // 10699 오늘 날짜
+    fun dDay(){
+        println(ZonedDateTime.now(ZoneId.of("Asia/Seoul")).toString().substring(0, 10))
     }
 
 }
