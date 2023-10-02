@@ -39,8 +39,17 @@ class loop {
     fun receipt(){
         val total  = sc.nextInt()
         val count = sc.nextInt()
-        
-        for()
+        var sum : Int = 0
+        for(i in 1..count){
+            var a = sc.nextInt()
+            var b = sc.nextInt()
+            sum +=(a*b)
+        }
+        if(total == sum){
+            println("Yes")
+        }else{
+            println("No")
+        }
     }
 }
 
