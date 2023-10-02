@@ -1,4 +1,9 @@
+import java.io.BufferedReader
+import java.io.BufferedWriter
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
 import java.util.Scanner
+import java.util.StringTokenizer
 
 class loop {
     val sc : Scanner = Scanner(System.`in`)
@@ -50,6 +55,45 @@ class loop {
         }else{
             println("No")
         }
+    }
+
+    // 25314 코딩은 체육과목입니다
+    fun intStr(){
+        val count : Int = sc.nextInt()
+        var result : java.lang.StringBuffer = StringBuffer("int")
+
+        for(i in 1..(count/4)){
+            result.insert(0,"long ")
+        }
+        println(result.toString())
+    }
+
+    // 15552 빠른 A+B
+    fun fastString(){
+        val br = BufferedReader(InputStreamReader(System.`in`))
+        val bw = BufferedWriter(OutputStreamWriter(System.out))
+
+        repeat(br.readLine().toInt()){
+            val token = StringTokenizer(br.readLine())
+            val sum = token.nextToken().toInt()+token.nextToken().toInt()
+            bw.write(sum.toString()+"\n")
+        }
+        bw.flush()
+    }
+
+    // 11021 A+B-7
+    fun fastString2(){
+        val br = BufferedReader(InputStreamReader(System.`in`))
+        val bw = BufferedWriter(OutputStreamWriter(System.out))
+
+        var count = br.readLine().toInt()
+
+        for(i in 0 until  count){
+            val token = StringTokenizer(br.readLine())
+            bw.write("Case #$i: "+(token.nextToken().toInt()+token.nextToken().toInt())+"\n")
+        }
+        bw.flush()
+
     }
 }
 

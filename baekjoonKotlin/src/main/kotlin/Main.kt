@@ -1,7 +1,7 @@
 
 fun main(args: Array<String>) {
     var check = loop()
-    check.receipt()
+    check.fastString2()
 
 
 }
