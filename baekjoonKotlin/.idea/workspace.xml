@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cfc2720e-63a5-41bb-9e3e-5607f1f5d628" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/loop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/loop.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +107,7 @@
       <workItem from="1696135695554" duration="2614000" />
       <workItem from="1696192340932" duration="15950000" />
       <workItem from="1696240144169" duration="7040000" />
-      <workItem from="1696329895210" duration="1136000" />
+      <workItem from="1696329895210" duration="2773000" />
     </task>
     <servers />
   </component>

@@ -107,6 +107,42 @@ class loop {
             bw.flush()
          */
     }
+
+    // 11022 A+B-8
+
+    fun fastString3(){
+        val br = BufferedReader(InputStreamReader(System.`in`))
+        val bw = BufferedWriter(OutputStreamWriter(System.out))
+
+        for (i in 1..br.readLine().toInt()){
+            var token = StringTokenizer(br.readLine())
+            var a = token.nextToken().toInt()
+            var b = token.nextToken().toInt()
+            bw.write("Case #${i}: ${a} + ${b} = ${a+b}\n")
+        }
+        bw.flush()
+        bw.close()
+    }
+
+    // 2438 별찍기
+
+    fun starStamp1(){
+        val br = BufferedReader(InputStreamReader(System.`in`))
+        val bw = BufferedWriter(OutputStreamWriter(System.out))
+        var count = br.readLine().toInt()
+
+        for(i in 0 until count){
+            for(j in 0.. i){
+                bw.write("*")
+            }
+            bw.write("\n")
+        }
+        bw.flush()
+        bw.close()
+    }
+
+    // 2439 별찍기2
+    fun starStamp2(){}
 }
 
 
