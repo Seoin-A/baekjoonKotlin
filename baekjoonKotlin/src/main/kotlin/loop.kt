@@ -85,15 +85,27 @@ class loop {
     fun fastString2(){
         val br = BufferedReader(InputStreamReader(System.`in`))
         val bw = BufferedWriter(OutputStreamWriter(System.out))
+        var count : Int = 1
 
-        var count = br.readLine().toInt()
-
-        for(i in 0 until  count){
+        repeat(br.readLine().toInt()){
             val token = StringTokenizer(br.readLine())
-            bw.write("Case #$i: "+(token.nextToken().toInt()+token.nextToken().toInt())+"\n")
+            val sum = token.nextToken().toInt()+token.nextToken().toInt()
+
+            bw.write("Case #${count}: ${sum}\n")
+            count++
         }
         bw.flush()
+        bw.close()
 
+        /*  val br = BufferedReader(InputStreamReader(System.`in`))
+            val bw = BufferedWriter(OutputStreamWriter(System.out))
+            var count = br.readLine().toInt()
+            for(i in 1..count){
+                val token = StringTokenizer(br.readLine())
+                bw.write("Case #${i}: ${token.nextToken().toInt()+token.nextToken().toInt()}\n")
+            }
+            bw.flush()
+         */
     }
 }
 
