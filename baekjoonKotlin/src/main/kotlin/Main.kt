@@ -1,7 +1,8 @@
 
 fun main(args: Array<String>) {
-    var check = loop()
-    check.addition2()
+    var check = array()
+    check.inputBoll()
+
 
 
 }
