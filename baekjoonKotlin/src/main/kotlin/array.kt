@@ -162,5 +162,17 @@ class array {
         print("${arr[0]}\n${arr[1]}")
     }
 
-    // 3052
+    // 3052 나머지
+
+    fun remain() = with(BufferedReader(InputStreamReader(System.`in`))){
+        var arr = mutableSetOf<Int>()
+        repeat(10){
+            arr.add(readLine().toInt()%42)
+        }
+        println("${arr.size}")
+    }
+
+    
+
+
 }
