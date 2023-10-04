@@ -150,4 +150,17 @@ class array {
         arr.forEach { print("${it} ") }
     }
 
+    // 5597 과제 안내신분
+    fun report()=with(BufferedReader(InputStreamReader(System.`in`))) {
+        val arr = Array(30) { it + 1 }.toMutableList()
+
+        repeat(28) {
+            var x = readLine().toInt()
+            if (x in arr)
+                arr.remove(x)
+        }
+        print("${arr[0]}\n${arr[1]}")
+    }
+
+    // 3052
 }
