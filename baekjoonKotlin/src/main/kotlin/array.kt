@@ -130,5 +130,24 @@ class array {
         println("앞으로 with 이용해보기!")
     }
 
+    // 10813 공바꾸기
+    fun changeBoll()= with(BufferedReader(InputStreamReader(System.`in`))){
+        var token = StringTokenizer(readLine(), " ")
+        val n = token.nextToken().toInt()
+        val m = token.nextToken().toInt()
+
+        var arr = Array(n){i->i+1}
+        var em = 0
+
+        repeat(m){
+            token = StringTokenizer(readLine()," ")
+            var x = token.nextToken().toInt()-1
+            var y = token.nextToken().toInt()-1
+            em = arr[x]
+            arr[x] = arr[y]
+            arr[y] = em
+        }
+        arr.forEach { print("${it} ") }
+    }
 
 }
