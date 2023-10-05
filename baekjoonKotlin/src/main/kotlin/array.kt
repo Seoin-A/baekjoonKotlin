@@ -172,7 +172,46 @@ class array {
         println("${arr.size}")
     }
 
-    
 
+    // 10811 바구니 뒤집기
+    fun basketOver() = with(BufferedReader(InputStreamReader(System.`in`))){
+        var token = StringTokenizer(readLine(), " ")
 
+        val n = token.nextToken().toInt()
+        val m = token.nextToken().toInt()
+
+        var arr = IntArray(n){ it+1}
+
+        repeat(m){
+            token = StringTokenizer(readLine(), " ")
+            var i = token.nextToken().toInt()-1
+            var j = token.nextToken().toInt()-1
+
+            while(i<j){
+                val temp = arr[i]
+                arr[i++] = arr[j]
+                arr[j--] = temp
+            }
+        }
+        arr.forEach { print("${it} ") }
+    }
+
+    fun averageScore() = with(BufferedReader(InputStreamReader(System.`in`))){
+        var t = StringTokenizer(readLine(), " ")
+        val n = t.nextToken().toInt()
+
+        t= StringTokenizer(readLine(), " ")
+        var arr = DoubleArray(n)
+        repeat(n){
+            arr[it] = t.nextToken().toDouble()
+        }
+
+        arr.sort()
+        val max = arr[arr.size-1]
+
+        for( i in 0 until arr.size){
+            arr[i] = (arr[i]/max) *100
+        }
+        println(arr.average())
+    }
 }

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc2720e-63a5-41bb-9e3e-5607f1f5d628" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/string.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/array.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/array.kt" afterDir="false" />
@@ -109,11 +110,23 @@
       <workItem from="1696240144169" duration="7040000" />
       <workItem from="1696329895210" duration="2773000" />
       <workItem from="1696363393603" duration="6016000" />
-      <workItem from="1696404905787" duration="8908000" />
+      <workItem from="1696404905787" duration="10714000" />
+      <workItem from="1696496411197" duration="3466000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/array.kt</url>
+          <line>186</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
