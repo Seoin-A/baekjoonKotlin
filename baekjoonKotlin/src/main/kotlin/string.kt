@@ -11,4 +11,9 @@ class string {
     }
 
     // 2743 단어 길이 재기
+    fun lengthStr() = with(BufferedReader(InputStreamReader(System.`in`))){
+        println(readLine().length)
+    }
+
+    // 
 }
