@@ -15,5 +15,5 @@ class string {
         println(readLine().length)
     }
 
-    // 
+    //
 }
