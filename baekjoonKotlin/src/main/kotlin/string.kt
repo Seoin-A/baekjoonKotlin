@@ -119,5 +119,12 @@ class string {
         println("$result")
     }
 
-    // 11718
+    // 11718 그대로 출력하기
+    fun outputAsIs() = with (BufferedReader(InputStreamReader(System.`in`))){
+        while(true){
+            readLine()?.let { it ->
+                if(it.isNotEmpty()) println(it)
+            }?:break
+        }
+    }
 }
