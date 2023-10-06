@@ -2,6 +2,7 @@ import java.io.BufferedReader
 import java.io.BufferedWriter
 import java.io.InputStreamReader
 import java.io.OutputStreamWriter
+import java.lang.StringBuilder
 
 import java.util.*
 
@@ -56,4 +57,67 @@ class string {
         arr.forEach { print("${it} ") }
         arr.forEach { print("${it} ") }
     }
+
+    // 2675 문자열 반복
+
+    fun printRepeat() = with(BufferedReader(InputStreamReader(System.`in`))){
+
+        repeat(readLine().toInt()){
+            var str = StringBuilder()
+            val t = StringTokenizer(readLine(), " ")
+            val x= t.nextToken().toInt()
+            var arr = t.nextToken()
+            for ( i in arr.indices){
+                repeat(x){
+                    str.append(arr[i])
+                }
+            }
+            println(str.toString())
+        }
+    }
+
+    // 1152 단어의 개수
+
+    fun printWord() = with (BufferedReader(InputStreamReader(System.`in`))){
+        val bw = BufferedWriter(OutputStreamWriter(System.out))
+        val arr = StringTokenizer(readLine(), " ")
+        bw.write("${arr.countTokens()}")
+        bw.flush()
+        bw.close()
+    }
+
+    // 2908 상수
+    fun intReverse() = with(BufferedReader(InputStreamReader(System.`in`))){
+        val bw = BufferedWriter(OutputStreamWriter(System.out))
+        var t = StringTokenizer(readLine()," ")
+
+        var a = t.nextToken().reversed().toInt()
+        var b = t.nextToken().reversed().toInt()
+
+        bw.write("${kotlin.math.max(a,b)}")
+        bw.flush()
+        bw.close()
+    }
+
+    // 5622 다이얼
+
+    fun printDial() = with (BufferedReader(InputStreamReader(System.`in`))){
+        var result = 0
+        val sum = readLine()
+        for ( i in sum.indices){
+            when(sum[i]){
+                'A', 'B', 'C' -> result +=3
+                'D', 'E', 'F' -> result +=4
+                'G', 'H', 'I' -> result +=5
+                'J', 'K', 'L' -> result +=6
+                'M', 'N', 'O' -> result +=7
+                'P', 'Q', 'R', 'S' -> result +=8
+                'T', 'U', 'V' -> result +=9
+                'W', 'X', 'Y','Z' -> result +=10
+            }
+        }
+        println("$result")
+    }
+
+    // 11718
 }
