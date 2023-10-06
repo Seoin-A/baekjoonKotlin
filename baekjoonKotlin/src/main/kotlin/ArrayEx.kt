@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter
 import java.util.StringTokenizer
 import kotlin.text.StringBuilder
 
-class array {
+class ArrayEx {
 
     /*
     * 코틀린 배열

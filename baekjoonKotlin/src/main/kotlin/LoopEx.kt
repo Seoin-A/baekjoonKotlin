@@ -5,7 +5,7 @@ import java.io.OutputStreamWriter
 import java.util.Scanner
 import java.util.StringTokenizer
 
-class loop {
+class LoopEx {
     val sc : Scanner = Scanner(System.`in`)
 
     // 2739 구구단

@@ -6,7 +6,7 @@ import java.lang.StringBuilder
 
 import java.util.*
 
-class string {
+class StringEx {
     // 27866 문자와 문자열
 
     fun charString() = with(Scanner(System.`in`)) {

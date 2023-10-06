@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-class conditionalStatement {
+class ConditionalStatement {
     val sc : Scanner = Scanner(System.`in`)
 
     // 1330 두 수 비교하기

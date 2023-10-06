@@ -1,7 +1,7 @@
 
 fun main(args: Array<String>) {
-    var check = string()
-    check.outputAsIs()
+    var check = Deepening()
+    check.sprout()
 
 
 
