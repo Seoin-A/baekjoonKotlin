@@ -2,6 +2,8 @@ import java.io.BufferedReader
 import java.io.BufferedWriter
 import java.io.InputStreamReader
 import java.io.OutputStreamWriter
+import java.nio.Buffer
+import java.util.*
 
 class Deepening {
     // 25083
@@ -72,5 +74,51 @@ class Deepening {
             break
         }
         print( if (check) 1 else 0)
+    }
+
+    fun palindrome1() = with(BufferedReader(InputStreamReader(System.`in`))){
+        val str  = readLine()
+        var sum = 1
+
+        for( i in str.indices){
+            if(str[i] != str[str.length-i-1]){
+                sum = 0
+                break
+            }
+        }
+        print("$sum")
+    }
+
+    // 1157 단어공부
+    fun printManyAlp() = with(BufferedReader(InputStreamReader(System.`in`))){
+        val str = readLine()
+        var arr =  mutableMapOf<Char,Int>()
+
+        str.forEach {
+            var c = it.lowercaseChar()
+
+            if(arr.containsKey(c)){
+                arr[c] = arr[c]!!.plus(1)
+            }
+            else arr.set(c,1)
+        }
+
+        val max = arr.maxBy { it.value }
+        if(arr.filter { it.value == max.value}.count() >1){
+            println("?")
+        }else{
+            println(max.key.uppercaseChar())
+        }
+    }
+
+    // 2941 크로아티아 알파벳
+    fun printChangeCro() = with ( BufferedReader(InputStreamReader(System.`in`))){
+        val arr = arrayOf("c=", "c-","dz=","d-","lj","nj","s=","z=")
+        var x = readLine()
+
+        arr.forEach {
+            x = x.replace(it,"!")
+        }
+        println("${x.length}")
     }
 }
