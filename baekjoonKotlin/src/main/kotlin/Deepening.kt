@@ -56,4 +56,21 @@ class Deepening {
             println()
         }
     }
+
+    // 10988 팰린드롬인지 확인하기
+    fun palindrome() = with (BufferedReader(InputStreamReader(System.`in`))){
+        val str : String = readLine()
+        var check = true
+
+        while(check){
+            for(i in str.indices){
+                if(str[i] != str[str.length-i-1]){
+                    check = false
+                    break
+                }
+            }
+            break
+        }
+        print( if (check) 1 else 0)
+    }
 }
