@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc2720e-63a5-41bb-9e3e-5607f1f5d628" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Deepening.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Deepening.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Deepening.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/array.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ArrayEx.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/conditionalStatement.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ConditionalStatement.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/loop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LoopEx.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/string.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/StringEx.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +111,8 @@
       <workItem from="1696363393603" duration="6016000" />
       <workItem from="1696404905787" duration="10714000" />
       <workItem from="1696496411197" duration="4061000" />
-      <workItem from="1696623942919" duration="8057000" />
+      <workItem from="1696623942919" duration="10321000" />
+      <workItem from="1696678250231" duration="1156000" />
     </task>
     <servers />
   </component>
