@@ -121,4 +121,23 @@ class Deepening {
         }
         println("${x.length}")
     }
+
+    // 1316 그룹 단어 체커
+
+    fun printCheckCheckers() = with (BufferedReader(InputStreamReader(System.`in`))){
+        var n : Int = readLine().toInt()
+        var sum = n
+        repeat(n){
+            val arr = readLine()
+            var list = mutableMapOf<Char,Int>()
+            for ( i in arr.indices){
+                if(list.containsKey(arr[i]) && arr[i] != arr[i-1] ){
+                    sum -= 1
+                    break
+                }
+                else list.set(arr[i],1)
+            }
+        }
+        println("$sum")
+    }
 }
