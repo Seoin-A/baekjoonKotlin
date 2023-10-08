@@ -7,7 +7,6 @@ import java.util.*
 
 class Deepening {
     // 25083
-
     fun sprout() = with(BufferedReader(InputStreamReader(System.`in`))){
         val bw = BufferedWriter(OutputStreamWriter(System.out))
         bw.write("         ,r'\"7\n")
@@ -140,4 +139,68 @@ class Deepening {
         }
         println("$sum")
     }
+
+    // 25206 너의 평점은 
+    fun printAverage() = with (BufferedReader(InputStreamReader(System.`in`))){
+        val scoreMap : Map<String, Double> = mapOf(
+            "A+" to 4.5,
+            "A0" to 4.0,
+            "B+" to 3.5,
+            "B0" to 3.0,
+            "C+" to 2.5,
+            "C0" to 2.0,
+            "D+" to 1.5,
+            "D0" to 1.0,
+            "F" to 0.0
+
+        )
+
+        var sum = 0.0
+        var total = 0.0
+
+        for( i in 0 until 20){
+            val list = readLine()!!.split(" ")
+            var check = list[2]
+            if (check != "P") {
+                sum += scoreMap.get(check)!! * list[1].toDouble()
+                total += list[1].toDouble()
+            }
+        }
+        print(sum/total)
+
+
+        /* 다른 방법
+    var sum = 0.0
+    var scoreSum = 0.0
+
+    var score: Double
+    var grade: String
+    val br = BufferedReader(InputStreamReader(System.`in`))
+    var st: StringTokenizer
+
+    for (i in 1..20) {
+        st = StringTokenizer(br.readLine())
+        st.nextToken()
+        score = st.nextToken().toDouble()
+        grade = st.nextToken()
+        if (grade == "P") continue
+        sum += score * when(grade) {
+            "A+" -> 4.5
+            "A0" -> 4.0
+            "B+" -> 3.5
+            "B0" -> 3.0
+            "C+" -> 2.5
+            "C0" -> 2.0
+            "D+" -> 1.5
+            "D0" -> 1.0
+            else -> 0.0
+        }
+        scoreSum += score
+    }
+    print(sum/scoreSum)
+
+ * */
+    }
+
+
 }
