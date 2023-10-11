@@ -87,4 +87,54 @@ class Array_2D_Ex {
             }
         }
     }
+
+    /*
+    2563 색종이
+    1. 가로 세로 크기 100인 정사각형의 색종이의 크기는 10이므로 100*100 행렬로 초기화한다.
+    2. 각 위치에 색종이를 붙이게 되면 행렬을 1로 교체한다.
+    3. 겹치는 부분은 자동으로 1로 유지된다.
+    4. 넓이를 출력한다.
+    */
+
+    fun printSqArea() = with(BufferedReader(InputStreamReader(System.`in`))){
+        var bw = BufferedWriter(OutputStreamWriter(System.out))
+        val n = readLine().toInt()
+        val arr = Array(100){IntArray(100){0} }
+        var sum = 0
+        var z = 0
+        repeat(n){
+            val t = StringTokenizer(readLine())
+            var x = t.nextToken().toInt()
+            var y = t.nextToken().toInt()
+            for(i in y until  (y+10)){
+                for ( j in x until x+10){
+                    if(arr[i][j] != 1) z+=1
+                    arr[i][j] = 1
+
+                }
+            }
+        }
+        bw.write("$z")
+        bw.flush()
+        bw.close()
+
+
+        /*
+        println("$z")
+        repeat(100){
+            i -> var x = i
+            repeat(100){
+                if(arr[i][it] == 1){
+                    sum+=1
+                }
+            }
+
+        }
+        bw.write("$sum")
+        bw.flush()
+        bw.close()
+
+        -> 오히려 빨라짐? 왜지?
+        */
+    }
 }
