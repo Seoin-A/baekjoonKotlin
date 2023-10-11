@@ -24,6 +24,7 @@ class Deepening {
         val arr = arrayOf(1,1,2,2,2,8)
         var res  = readLine().split(" ").map { it.toInt() }.toMutableList()
 
+
         for (i in arr.indices){
             if(arr[i] != res[i]){
                 res[i] = arr[i] - res[i]

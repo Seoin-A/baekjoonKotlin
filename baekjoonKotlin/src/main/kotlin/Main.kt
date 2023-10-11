@@ -1,7 +1,7 @@
 
 fun main(args: Array<String>) {
-    var check = Deepening()
-    check.printAverage()
+    var check = Array_2D_Ex()
+    check.sumArray2d()
 
 
 
