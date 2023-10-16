@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc2720e-63a5-41bb-9e3e-5607f1f5d628" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mathSpecialized.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Array_2D_Ex.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Array_2D_Ex.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +116,9 @@
       <workItem from="1696768476047" duration="1187000" />
       <workItem from="1697021463740" duration="4381000" />
       <workItem from="1697045285748" duration="5965000" />
+      <workItem from="1697194252941" duration="2431000" />
+      <workItem from="1697375223448" duration="341000" />
+      <workItem from="1697461686418" duration="1480000" />
     </task>
     <servers />
   </component>
