@@ -19,7 +19,7 @@ class mathSpecialized {
 
         for(i in arr.indices){
             if(n<=10){
-                res += arr[i]-'0'
+
             }else{
 
             }
